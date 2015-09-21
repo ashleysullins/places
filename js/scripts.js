@@ -1,5 +1,6 @@
 $(document).ready(function() {
    $("form#new-location").submit(function(event) {
+    $("#show-location");
     event.preventDefault();
 
     var inputtedCountry = $("select#new-country").val();
@@ -9,7 +10,7 @@ $(document).ready(function() {
     var inputtedNotes = $("input#new-notes").val();
     var newLocation = { country: inputtedCountry, state: inputtedState, city: inputtedCity, notablePlace: inputtedNotablePlace, notes: inputtedNotes };
 
-    $("ul#location").append("<li><span class='location'>" + newLocation.country + " " + newLocation.state + " " + newLocation.city + "</span></li>");
+    $("ul#location").append("<li><span class='location'>" + newLocation.country + "</span></li>");
     $("select#new-country").val("");
     $("select#US").val("");
     $("input#new-city").val("");
