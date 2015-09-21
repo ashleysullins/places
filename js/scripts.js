@@ -2,16 +2,16 @@ $(document).ready(function() {
    $("form#new-location").submit(function(event) {
     event.preventDefault();
 
-    var inputtedCountry = $("input#new-country").val();
-    var inputtedState = $("input#new-state").val();
+    var inputtedCountry = $("select#new-country").val();
+    var inputtedState = $("select#US").val();
     var inputtedCity = $("input#new-city").val();
     var inputtedNotablePlace = $("input#new-notable-place").val();
     var inputtedNotes = $("input#new-notes").val();
     var newLocation = { country: inputtedCountry, state: inputtedState, city: inputtedCity, notablePlace: inputtedNotablePlace, notes: inputtedNotes };
 
     $("ul#location").append("<li><span class='location'>" + newLocation.country + " " + newLocation.state + " " + newLocation.city + "</span></li>");
-    $("input#new-country").val("");
-    $("input#new-state").val("");
+    $("select#new-country").val("");
+    $("select#US").val("");
     $("input#new-city").val("");
     $("input#new-notable-place").val("");
     $("input#new-notes").val("");

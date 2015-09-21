@@ -10,8 +10,12 @@
   </head>
   <body>
     <div class="container">
-      <h1>Travel Journal</h1>
 
+
+          <div class="col-md-6">
+          <img class="biscuits" src="img/zero-gravity-biscuits.jpeg" alt="mmm...biscuits">
+        </div>
+        <h1>Travel Journal</h1>
       <div class="row">
         <div class="col-md-6">
           <h2>Add information about a location you visited:</h2>
@@ -19,7 +23,7 @@
 
             <div class="form-group">
               <label for="new-country">Country</label>
-              <select class="crs-country" data-show-empty-option="false" data-default-value="United States" data-region-id="US"></select>
+              <select id="new-country" class="crs-country" data-show-empty-option="false" data-default-value="United States" data-region-id="US"></select>
             </div>
 
             <div class="form-group">
@@ -29,11 +33,11 @@
 
             <div class="form-group">
               <label for="new-city">City</label>
-              <input type="text" class="form-control" id="new-city">
+              <input type="text" class="form-control" id="new-city" required="required">
             </div>
             <div class="form-group">
               <label for="new-notable-place">Notable Places:</label>
-              <input type="text" class="form-control" id="new-notable-place">
+              <input type="text" class="form-control" id="new-notable-place" required="required">
             </div>
             <div class="form-group">
               <label for="new-notes">Notes about the area:</label>
