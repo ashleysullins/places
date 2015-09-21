@@ -1,4 +1,5 @@
-$(document).ready(function() {  $("form#new-location").submit(function(event) {
+$(document).ready(function() {
+   $("form#new-location").submit(function(event) {
     event.preventDefault();
 
     var inputtedCountry = $("input#new-country").val();
@@ -14,13 +15,15 @@ $(document).ready(function() {  $("form#new-location").submit(function(event) {
     $("input#new-city").val("");
     $("input#new-notable-place").val("");
     $("input#new-notes").val("");
-  });
-});
 
-$(".location").last().click(function() {
-  $("#show-location").show();
-  $("#show-location h2").text(newLocation.country + " " + newLocation.state + " " + newLocation.city);
-  $(".country").text(newLocation.country);      $(".state").text(newLocation.state);
-  $(".city").text(newLocation.city);    $(".notable-place").text(newLocation.notablePlace);
-  $(".notes").text(newLocation.notes);
+    $(".location").last().click(function() {
+      $("#show-location").show();
+      $("#show-location h2").text(newLocation.country + " " + newLocation.state + " " + newLocation.city);
+      $(".country").text(newLocation.country);
+      $(".state").text(newLocation.state);
+      $(".city").text(newLocation.city);
+      $(".notable-place").text(newLocation.notablePlace);
+      $(".notes").text(newLocation.notes);
+    });
+  });
 });
