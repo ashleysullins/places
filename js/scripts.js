@@ -18,7 +18,7 @@ $(document).ready(function() {
 
     $(".location").last().click(function() {
       $("#show-location").show();
-      $("#show-location h2").text(newLocation.country + " " + newLocation.state + " " + newLocation.city);
+      $("#show-location h2").text(newLocation.state + " , " + newLocation.city);
       $(".country").text(newLocation.country);
       $(".state").text(newLocation.state);
       $(".city").text(newLocation.city);

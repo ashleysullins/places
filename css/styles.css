@@ -19,8 +19,17 @@ h1, h2{
   font-family: 'Handlee', cursive !important;
 }
 
+h1 {
+  font-size: 55px !important;
+}
+
 p, label {
   font-family: 'Roboto', sans-serif !important;
+
+}
+
+h5 {
+  color: #4172B5 !important;
 }
 
 .biscuits{
